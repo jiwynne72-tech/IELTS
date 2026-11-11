@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Wynne English — IELTS Simulation Tests (Version 2)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Dedicated Print Stylesheet */
+        @media print {
+            @page {
+                margin: 1.5cm;
+                size: A4;
+            }
+
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                font-size: 10.5pt;
+                line-height: 1.45;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .print-clean {
+                box-shadow: none !important;
+                background-color: #ffffff !important;
+                border-color: #d1d5db !important;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea,
+            select {
+                border: none !important;
+                border-bottom: 1px solid #9ca3af !important;
+                border-radius: 0 !important;
+                background-color: transparent !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                box-shadow: none !important;
+                color: #000000 !important;
+            }
+
+            textarea {
+                border: 1px solid #d1d5db !important;
+                border-radius: 4px !important;
+                padding: 6px !important;
+            }
+
+            .print-avoid-break {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: #000000 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased">
+
+    <!-- =================================================================== -->
+    <!-- HEADER SECTION                                                      -->
+    <!-- =================================================================== -->
+    <header class="bg-white border-b border-slate-200 print-clean">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Teacher Logo -->
+            <div class="flex items-center justify-center">
+                <img 
+                    src="https://static.wixstatic.com/media/6ce7a7_e9543ef199f041e19b45784dc836abeb~mv2.png" 
+                    alt="James Wynne English Logo" 
+                    class="h-14 sm:h-16 w-auto object-contain"
+                    onerror="this.onerror=null; this.src='https://placehold.co/220x64/f8fafc/1e293b?text=James+Wynne+English';"
+                >
+            </div>
+            <!-- Subtitle -->
+            <div class="text-center sm:text-right">
+                <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">English Language Learning</p>
+                <p class="text-sm font-medium text-slate-600">IELTS Academic Simulation Tests — Version 2</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- STUDENT INFO & PRINT CONTROLS BAR                                   -->
+    <!-- =================================================================== -->
+    <section class="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sm:p-6 print-clean">
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-end">
+                <div class="sm:col-span-5">
+                    <label for="student-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Student Name</label>
+                    <input type="text" id="student-name" name="student-name" placeholder="Enter your full name" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="sm:col-span-5">
+                    <label for="student-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">Student Email</label>
+                    <input type="email" id="student-email" name="student-email" placeholder="Enter your email address" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="sm:col-span-2 no-print">
+                    <button type="button" onclick="window.print()" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium rounded-lg shadow-sm cursor-pointer">
+                        <span>Print</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MAIN CONTENT CONTAINER                                              -->
+    <!-- =================================================================== -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-12">
+
+        <!-- =============================================================== -->
+        <!-- SIMULATION TEST 3                                               -->
+        <!-- =============================================================== -->
+        <section class="space-y-6">
+            <div class="bg-slate-900 text-white rounded-xl p-6 shadow-sm print-clean">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-500/20 text-blue-200 rounded-md mb-2 uppercase tracking-wider">Full IELTS Academic Simulation</span>
+                <h1 class="text-2xl sm:text-3xl font-bold">Simulation Test 3</h1>
+                <p class="text-sm text-slate-300 mt-1">Listening, Academic Reading (Passages 1–3), and Academic Writing (Tasks 1 &amp; 2)</p>
+            </div>
+
+            <!-- LISTENING SECTION -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+                <div class="border-b border-slate-100 pb-4 mb-5">
+                    <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-indigo-50 text-indigo-700 rounded-md mb-2">Section 1: Listening</span>
+                    <h2 class="text-xl font-bold text-slate-900">IELTS Listening Simulation</h2>
+                    <p class="text-sm text-slate-500 mt-1">Click <strong>Listen (TTS)</strong> to hear the audio lecture. Answer the questions below as you listen.</p>
+                    <div class="flex flex-wrap items-center gap-2 no-print my-3">
+                        <button type="button" id="t3-l-btn" onclick="toggleTTS('t3-l-text', 't3-l-btn')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm cursor-pointer">&#9658; Listen (TTS)</button>
+                        <button type="button" id="t3-t-btn" onclick="toggleTranscript('t3-l-text', 't3-t-btn')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-semibold rounded-lg cursor-pointer">Show Transcript</button>
+                    </div>
+                </div>
+                <div id="t3-l-text" class="hidden bg-slate-50 border border-slate-200 rounded-lg p-4 mb-6 text-sm text-slate-700 space-y-3 leading-relaxed">
+                    <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Audio Transcript (Over 1,000 Words)</p>
+                    <p><strong>Part 1: Introduction to Marine Archaeology and Deep-Sea Exploration.</strong> Welcome, everyone, to this morning's guest lecture on the evolution of marine archaeology. My name is Dr. Alistair Vance, and for the past twenty years, my research has focused on shipwrecks preserved in the oxygen-minimized depths of the Mediterranean and Black Seas. For centuries, maritime archaeology was severely restricted by the physiological limits of human divers. Prior to the invention of the Aqua-Lung by Jacques Cousteau and Émile Gagnan in 1943, underwater exploration relied on cumbersome surface-supplied copper helmets and canvas suits, which severely constrained mobility, working depth, and bottom time. Divers could rarely descend below forty metres or remain submerged for more than thirty minutes without risking decompression sickness—a painful and potentially fatal condition caused by nitrogen bubbles forming in the bloodstream during rapid ascent.</p>
+                    <p><strong>Part 2: Technological Revolutions — Sonar, ROVs, and Autonomous Submersibles.</strong> The advent of acoustic sonar during the Second World War fundamentally changed how researchers scan the ocean floor. Side-scan sonar and multibeam echo sounders bounce sound waves off the seabed, generating high-resolution acoustic images of submerged anomalies without requiring a physical dive. Once a target is identified, modern marine archaeologists deploy Remotely Operated Vehicles, commonly known as ROVs. These tethered robotic submersibles are equipped with ultra-high-definition stereoscopic cameras, robotic manipulator arms, and laser scanners capable of mapping an entire hull down to the millimetre. More recently, Autonomous Underwater Vehicles, or AUVs, have revolutionised deep-sea surveys. Operating independently along pre-programmed grid lines, AUVs carry out exhaustive bathymetric mapping across thousands of square kilometres of deep ocean trenches where sunlight never penetrates.</p>
+                    <p><strong>Part 3: Preservation Challenges and Bio-Archaeology in Anoxic Environments.</strong> One of the most fascinating aspects of deep-sea archaeology is preservation. In shallow coastal waters, shipwrecks are constantly battered by wave action, tidal currents, and wood-boring marine mollusks such as Teredo navalis—often called the "termites of the sea"—which rapidly consume organic timbers. However, in the dark, cold, anoxic depths of the Black Sea, below two hundred metres, oxygen levels are virtually zero. In these abyssal dead zones, anaerobic bacteria cannot thrive, and wooden hulls remain pristine for millennia. We have excavated Byzantine trading vessels dating back to the tenth century where carved decorative motifs, coiled hemp ropes, and even sealed ceramic amphorae containing preserved olive oil and fish remains are intact. Analysing these organic residues provides extraordinary insights into ancient Mediterranean trade routes, diet, and maritime economies. Nevertheless, bringing these fragile artifacts to the surface requires meticulous conservation protocols. Once waterlogged organic artifacts are exposed to oxygen and drying air, the cellular structure collapses instantly unless treated with polyethylene glycol and freeze-dried in specialized vacuum chambers over many months. As we look to the future, deep-sea archaeology stands at the intersection of historical inquiry and cutting-edge robotics, reminding us that the ocean floor is the largest unexcavated museum on Earth.</p>
+                </div>
+
+                <div class="space-y-4 text-sm">
+                    <p class="font-semibold text-slate-900">Questions 1–5: Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>1. Cousteau and Gagnan invented the Aqua-Lung in <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-24">.</div>
+                        <div>2. Decompression sickness is caused by <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28"> bubbles in the bloodstream.</div>
+                        <div>3. Tethered robotic submersibles are known as <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28">.</div>
+                        <div>4. In the Black Sea, oxygen levels below 200 metres are <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-24">.</div>
+                        <div>5. Waterlogged organic artifacts must be treated with <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28">.</div>
+                    </div>
+                    <p class="font-semibold text-slate-900 pt-3">Questions 6–10: Choose the correct letter, A, B, or C.</p>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="font-medium">6. What was the primary limitation of pre-1943 diving suits?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. They were too expensive</option><option>B. They constrained mobility and bottom time</option><option>C. They lacked underwater lights</option></select>
+                        </div>
+                        <div>
+                            <p class="font-medium">7. What technology maps the seabed using sound waves without physical dives?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. Multibeam echo sounders</option><option>B. Laser scanners</option><option>C. Stereoscopic cameras</option></select>
+                        </div>
+                        <div>
+                            <p class="font-medium">8. What organism is referred to as the "termite of the sea"?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. Anaerobic bacteria</option><option>B. Teredo navalis</option><option>C. Deep-sea amphorae</option></select>
+                        </div>
+                        <div>
+                            <p class="font-medium">9. Why do wooden hulls survive in pristine condition in the deep Black Sea?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. High salinity protects the wood</option><option>B. Zero oxygen prevents wood-boring bacteria</option><option>C. Strong currents bury them in sediment</option></select>
+                        </div>
+                        <div>
+                            <p class="font-medium">10. What is contained inside the sealed Byzantine amphorae discovered?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. Olive oil and fish remains</option><option>B. Roman gold coins</option><option>C. Rolled papyrus scrolls</option></select>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- READING SECTION -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean space-y-8">
+                <div class="border-b border-slate-100 pb-4">
+                    <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-emerald-50 text-emerald-700 rounded-md mb-2">Section 2: Academic Reading</span>
+                    <h2 class="text-xl font-bold text-slate-900">IELTS Reading Passages (1–3)</h2>
+                </div>
+
+                <!-- Passage 1 -->
+                <div class="space-y-4 border-b border-slate-200 pb-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <h3 class="text-lg font-bold text-slate-900">Passage 1: The Neurobiology of Sleep and Memory Consolidation</h3>
+                        <button type="button" id="t3-p1-btn" onclick="toggleTTS('t3-p1-text', 't3-p1-btn')" class="no-print inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm cursor-pointer">&#9658; Listen (TTS)</button>
+                    </div>
+                    <div id="t3-p1-text" class="text-sm text-slate-700 space-y-3 leading-relaxed bg-slate-50/70 p-4 rounded-lg border border-slate-100">
+                        <p>For decades, sleep was viewed by physiologists as a passive state of physical repose during which the brain simply shut down to recover from the metabolic wear and tear of waking life. Modern neuroscience has decisively shattered this misconception. Far from being dormant, the sleeping brain is remarkably active, orchestrating vital cognitive housekeeping operations, clearing metabolic waste, and consolidating fleeting daily experiences into stable, long-term memory architectures.</p>
+                        <p>Human sleep architecture is broadly divided into two distinct physiological states: Non-Rapid Eye Movement (NREM) sleep, which progresses through progressively deeper stages of slow-wave sleep, and Rapid Eye Movement (REM) sleep, characterized by vivid dreaming and high brain activity. Both states play indispensable, complementary roles in memory processing. Slow-wave NREM sleep is particularly critical for declarative memory—the retention of facts, episodes, and general knowledge. During deep NREM sleep, the brain generates slow oscillation rhythms coordinated with sleep spindles—bursts of neural activity that act as internal transfer cables, shuttling newly acquired information from the hippocampus, a temporary holding station, into the neocortex for permanent storage.</p>
+                        <p>In contrast, REM sleep is heavily implicated in emotional processing, creative problem-solving, and procedural memory, such as physical skill acquisition. During REM sleep, the brain reactivates neural firing patterns associated with daytime learning while uncoupling them from the stress-related neurochemicals epinephrine and norepinephrine. This neurochemical bath allows the sleeping mind to reprocess traumatic or challenging experiences in a safe, tranquil environment, dampening emotional reactivity and fostering novel conceptual connections.</p>
+                        <p>Beyond memory consolidation, sleep serves a vital waste-management function discovered only recently: the glymphatic system. During wakefulness, cellular metabolism produces neurotoxic byproducts, including beta-amyloid proteins associated with neurodegenerative diseases. As we drift into deep slow-wave sleep, glial cells in the brain shrink by nearly sixty percent, widening the interstitial spaces and allowing cerebrospinal fluid to rush through the tissue like a dishwasher, flushing accumulated metabolic waste away.</p>
+                        <p>Given these profound cognitive and biological functions, chronic sleep deprivation carries severe health consequences. Impaired immune function, compromised glucose regulation, elevated cardiovascular risk, and accelerated cognitive decline are all documented outcomes of sustained sleep restriction. Far from being a luxury to be sacrificed for productivity, robust sleep is the biological bedrock upon which cognitive health and longevity depend.</p>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-semibold">Questions 1–4: Do the following statements agree with Passage 1? (TRUE / FALSE / NOT GIVEN)</p>
+                        <div>1. Early researchers believed the brain was completely inactive during sleep. <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select></div>
+                        <div>2. Slow-wave NREM sleep is essential for procedural skill acquisition. <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select></div>
+                        <div>3. During REM sleep, stress-related neurochemicals are reduced. <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select></div>
+                        <div>4. The glymphatic system expands glial cells during wakefulness. <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select></div>
+                    </div>
+                </div>
+
+                <!-- Passage 2 -->
+                <div class="space-y-4 border-b border-slate-200 pb-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <h3 class="text-lg font-bold text-slate-900">Passage 2: The Evolution and Economics of Renewable Energy Grids</h3>
+                        <button type="button" id="t3-p2-btn" onclick="toggleTTS('t3-p2-text', 't3-p2-btn')" class="no-print inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm cursor-pointer">&#9658; Listen (TTS)</button>
+                    </div>
+                    <div id="t3-p2-text" class="text-sm text-slate-700 space-y-3 leading-relaxed bg-slate-50/70 p-4 rounded-lg border border-slate-100">
+                        <p>The global transition from fossil-fuel-dominated electrical grids to decentralized renewable energy systems represents one of the most complex infrastructure overhauls in human history. For over a century, electrical grids operated on a centralized model: large, predictable thermal power plants—fueled by coal, natural gas, or nuclear fission—burned fuel continuously to match fluctuating consumer demand in real time. Integrating wind and solar power into this legacy architecture introduces an unprecedented engineering challenge: intermittency.</p>
+                        <p>Unlike coal or gas turbines, which can be ramped up instantly when demand spikes, wind turbines generate electricity only when the wind blows, and photovoltaic panels produce power exclusively during daylight hours. When generation outstrips demand on a windy, sunny afternoon, grid operators face the problem of overgeneration, sometimes forcing wind farms to curtail production. Conversely, during periods of low generation and high demand, grids risk blackouts unless rapid-response backup is available.</p>
+                        <p>Solving the intermittency dilemma requires a three-pillar approach: advanced energy storage, high-voltage transmission interconnectors, and demand-side management. Lithium-ion battery installations have become the standard for short-term storage, smoothing out intraday solar peaks. For multi-day or seasonal energy storage, emerging technologies such as pumped hydro storage, compressed air energy storage, and green hydrogen electrolysis are gaining traction. Green hydrogen involves using surplus renewable electricity to split water molecules into hydrogen and oxygen; the hydrogen can then be stored in underground salt caverns and burned in turbines when renewable generation dips.</p>
+                        <p>Simultaneously, smart grids equipped with digital sensors and AI-driven load-balancing algorithms enable bidirectional power flow. Households equipped with rooftop solar panels and electric vehicles can feed surplus energy back into the neighborhood grid during peak hours, transforming passive consumers into active "prosumers." While capital expenditure for these smart upgrades is substantial, plunging photovoltaic and wind turbine manufacturing costs have made renewables the cheapest source of new electricity generation in history across most of the globe.</p>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-semibold">Questions 5–8: Complete the summary using ONE WORD from the passage for each answer.</p>
+                        <p>Traditional grids relied on predictable <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28"> power plants. Renewable sources introduce the challenge of <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28">. To store surplus energy across seasons, green <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28"> can be produced and stored in salt caverns. Modern smart grids allow consumers to become active <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28">.</p>
+                    </div>
+                </div>
+
+                <!-- Passage 3 -->
+                <div class="space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <h3 class="text-lg font-bold text-slate-900">Passage 3: Linguistic Relativity and the Shaping of Human Thought</h3>
+                        <button type="button" id="t3-p3-btn" onclick="toggleTTS('t3-p3-text', 't3-p3-btn')" class="no-print inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm cursor-pointer">&#9658; Listen (TTS)</button>
+                    </div>
+                    <div id="t3-p3-text" class="text-sm text-slate-700 space-y-3 leading-relaxed bg-slate-50/70 p-4 rounded-lg border border-slate-100">
+                        <p>Does the language we speak shape how we perceive reality, categorize objects, and conceptualize time? This profound question lies at the heart of linguistic relativity, commonly known as the Sapir-Whorf hypothesis. Formulated in the early twentieth century by anthropologist Edward Sapir and his student Benjamin Lee Whorf, the strong version of the hypothesis posited that language strictly determines thought—implying that if a language lacks a specific grammatical structure or vocabulary term for a concept, its speakers are fundamentally incapable of thinking about it. This extreme view was largely dismissed by mid-century universalist linguists like Noam Chomsky, who argued that innate cognitive structures underlie all human languages.</p>
+                        <p>However, over the past thirty years, cognitive scientists have revived a nuanced "neo-Whorfian" perspective, demonstrating that while language does not imprison thought, it routinely guides attention, memory, and categorization. A striking example involves spatial orientation. In English, we use egocentric coordinates such as "left," "right," "front," and "back," which change depending on which direction a speaker is facing. By contrast, languages like Guugu Yimithirr, spoken by an Indigenous Australian community in Queensland, use absolute cardinal directions—north, south, east, and west—exclusively. A Guugu Yimithirr speaker does not say "there is an ant on your right leg," but rather "there is an ant on your southwest leg." Consequently, these speakers maintain an infallible, subconscious internal compass at all times.</p>
+                        <p>Grammatical gender provides another compelling window into cognitive framing. In languages with grammatical gender, such as Spanish or German, inanimate objects are routinely assigned masculine or female pronouns. Studies show that native speakers unconsciously attribute gender-stereotyped human characteristics to inanimate nouns. For instance, when asked to describe a bridge—a masculine noun in German (der Brücke) and a feminine noun in Spanish (la puente)—German speakers frequently use adjectives like "sturdy," "strong," and "towering," whereas Spanish speakers tend to choose words like "elegant," "fragile," and "peaceful."</p>
+                        <p>Ultimately, language is not merely a passive passive mirror reflecting objective reality, but an active lens that focuses our attention on specific dimensions of experience. As linguist Lera Boroditsky notes, the thousands of languages spoken across the globe represent thousands of distinct cognitive universes, offering a breathtaking testament to the flexibility of the human mind.</p>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-semibold">Questions 9–12: Choose the correct letter, A, B, or C.</p>
+                        <div>9. What did the strong Sapir-Whorf hypothesis claim? <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>A. Language strictly determines thought</option><option>B. All languages share identical grammar</option><option>C. Vocabulary has no impact on memory</option></select></div>
+                        <div>10. How do Guugu Yimithirr speakers describe spatial position? <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>A. Using left and right</option><option>B. Using absolute cardinal directions</option><option>C. Using height and depth coordinates</option></select></div>
+                        <div>11. What did studies on grammatical gender reveal about speakers? <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>A. They assign gender-stereotyped traits to inanimate nouns</option><option>B. They cannot learn languages without gender</option><option>C. They ignore adjectives entirely</option></select></div>
+                        <div>12. According to Lera Boroditsky, what do world languages represent? <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>A. Imperfect communication tools</option><option>B. Thousands of distinct cognitive universes</option><option>C. A dying evolutionary artifact</option></select></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- WRITING SECTION (WITH VISUAL CHART) -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean space-y-8">
+                <div class="border-b border-slate-100 pb-4">
+                    <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-amber-50 text-amber-700 rounded-md mb-2">Section 3: Academic Writing</span>
+                    <h2 class="text-xl font-bold text-slate-900">IELTS Writing Tasks 1 &amp; 2</h2>
+                </div>
+                <div class="space-y-3 print-avoid-break">
+                    <h3 class="text-base font-bold text-slate-900">Writing Task 1 (Minimum 150 words — 20 minutes)</h3>
+                    <p class="text-sm text-slate-700">The chart below illustrates global electric vehicle (EV) sales (in millions) across three major regions from 2018 to 2024. Summarise the information by selecting and reporting main features, and make comparisons where relevant.</p>
+                    
+                    <!-- SVG Chart Visual -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 flex flex-col items-center">
+                        <p class="text-xs font-bold text-slate-600 uppercase mb-2">Global EV Sales by Region (2018–2024 in Millions)</p>
+                        <svg viewBox="0 0 600 260" class="w-full max-w-lg h-auto">
+                            <!-- Grid lines -->
+                            <line x1="50" y1="20" x2="580" y2="20" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="50" y1="60" x2="580" y2="60" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="50" y1="100" x2="580" y2="100" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="50" y1="140" x2="580" y2="140" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="50" y1="180" x2="580" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="50" y1="220" x2="580" y2="220" stroke="#cbd5e1" stroke-width="2"/>
+                            
+                            <!-- Y-axis labels -->
+                            <text x="40" y="24" font-size="10" fill="#64748b" text-anchor="end">15M</text>
+                            <text x="40" y="64" font-size="10" fill="#64748b" text-anchor="end">12M</text>
+                            <text x="40" y="104" font-size="10" fill="#64748b" text-anchor="end">9M</text>
+                            <text x="40" y="144" font-size="10" fill="#64748b" text-anchor="end">6M</text>
+                            <text x="40" y="184" font-size="10" fill="#64748b" text-anchor="end">3M</text>
+                            <text x="40" y="224" font-size="10" fill="#64748b" text-anchor="end">0</text>
+
+                            <!-- Data lines & points: Asia-Pacific (Blue), Europe (Emerald), North America (Amber) -->
+                            <!-- Asia-Pacific: 2018(2.1), 2019(2.8), 2020(3.5), 2021(6.2), 2022(9.8), 2023(12.5), 2024(14.8) -->
+                            <polyline fill="none" stroke="#2563eb" stroke-width="3" points="80,192 155,183 230,173 305,138 380,91 455,55 530,23"/>
+                            <!-- Europe: 2018(1.1), 2019(1.5), 2020(2.8), 2021(4.2), 2022(5.5), 2023(6.8), 2024(7.6) -->
+                            <polyline fill="none" stroke="#059669" stroke-width="3" points="80,205 155,200 230,183 305,164 380,147 455,130 530,119"/>
+                            <!-- North America: 2018(0.8), 2019(0.9), 2020(1.2), 2021(2.0), 2022(3.1), 2023(4.5), 2024(5.8) -->
+                            <polyline fill="none" stroke="#d97706" stroke-width="3" points="80,210 155,208 230,204 305,193 380,179 455,160 530,143"/>
+
+                            <!-- X-axis labels -->
+                            <text x="80" y="240" font-size="10" fill="#64748b" text-anchor="middle">2018</text>
+                            <text x="155" y="240" font-size="10" fill="#64748b" text-anchor="middle">2019</text>
+                            <text x="230" y="240" font-size="10" fill="#64748b" text-anchor="middle">2020</text>
+                            <text x="305" y="240" font-size="10" fill="#64748b" text-anchor="middle">2021</text>
+                            <text x="380" y="240" font-size="10" fill="#64748b" text-anchor="middle">2022</text>
+                            <text x="455" y="240" font-size="10" fill="#64748b" text-anchor="middle">2023</text>
+                            <text x="530" y="240" font-size="10" fill="#64748b" text-anchor="middle">2024</text>
+                        </svg>
+                        <!-- Legend -->
+                        <div class="flex flex-wrap justify-center gap-4 mt-3 text-xs">
+                            <div class="flex items-center gap-1.5"><span class="w-3 h-3 bg-blue-600 rounded-full inline-block"></span> Asia-Pacific</div>
+                            <div class="flex items-center gap-1.5"><span class="w-3 h-3 bg-emerald-600 rounded-full inline-block"></span> Europe</div>
+                            <div class="flex items-center gap-1.5"><span class="w-3 h-3 bg-amber-600 rounded-full inline-block"></span> North America</div>
+                        </div>
+                    </div>
+
+                    <textarea id="t3-w1" rows="7" oninput="updateWordCount('t3-w1', 't3-w1-count')" placeholder="Write your Task 1 response here..." class="w-full p-3 text-sm bg-slate-50 border border-slate-300 rounded-lg"></textarea>
+                    <div class="text-right text-xs font-medium text-slate-500 no-print" id="t3-w1-count">0 words</div>
+                </div>
+                <div class="space-y-3 print-avoid-break border-t border-slate-200 pt-6">
+                    <h3 class="text-base font-bold text-slate-900">Writing Task 2 (Minimum 250 words — 40 minutes)</h3>
+                    <p class="text-sm text-slate-700">In many countries, an increasing number of people are choosing to live alone rather than with family or roommates. What are the causes of this trend, and what are the impacts on society?</p>
+                    <textarea id="t3-w2" rows="10" oninput="updateWordCount('t3-w2', 't3-w2-count')" placeholder="Write your Task 2 essay here..." class="w-full p-3 text-sm bg-slate-50 border border-slate-300 rounded-lg"></textarea>
+                    <div class="text-right text-xs font-medium text-slate-500 no-print" id="t3-w2-count">0 words</div>
+                </div>
+            </article>
+        </section>
+
+        <!-- =============================================================== -->
+        <hr class="border-slate-300 my-12">
+        <!-- =============================================================== -->
+
+        <!-- =============================================================== -->
+        <!-- SIMULATION TEST 4                                               -->
+        <!-- =============================================================== -->
+        <section class="space-y-6">
+            <div class="bg-slate-900 text-white rounded-xl p-6 shadow-sm print-clean">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-500/20 text-blue-200 rounded-md mb-2 uppercase tracking-wider">Full IELTS Academic Simulation</span>
+                <h1 class="text-2xl sm:text-3xl font-bold">Simulation Test 4</h1>
+                <p class="text-sm text-slate-300 mt-1">Listening, Academic Reading (Passages 1–3), and Academic Writing (Tasks 1 &amp; 2)</p>
+            </div>
+
+            <!-- LISTENING SECTION -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+                <div class="border-b border-slate-100 pb-4 mb-5">
+                    <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-indigo-50 text-indigo-700 rounded-md mb-2">Section 1: Listening</span>
+                    <h2 class="text-xl font-bold text-slate-900">IELTS Listening Simulation</h2>
+                    <p class="text-sm text-slate-500 mt-1">Click <strong>Listen (TTS)</strong> to hear the audio lecture. Answer the questions below as you listen.</p>
+                    <div class="flex flex-wrap items-center gap-2 no-print my-3">
+                        <button type="button" id="t4-l-btn" onclick="toggleTTS('t4-l-text', 't4-l-btn')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm cursor-pointer">&#9658; Listen (TTS)</button>
+                        <button type="button" id="t4-t-btn" onclick="toggleTranscript('t4-l-text', 't4-t-btn')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-semibold rounded-lg cursor-pointer">Show Transcript</button>
+                    </div>
+                </div>
+                <div id="t4-l-text" class="hidden bg-slate-50 border border-slate-200 rounded-lg p-4 mb-6 text-sm text-slate-700 space-y-3 leading-relaxed">
+                    <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Audio Transcript (Over 1,000 Words)</p>
+                    <p><strong>Part 1: The Biology and Conservation of Pollinators.</strong> Good morning, biology students. Today we continue our module on entomology by examining the ecological significance of insect pollinators, specifically wild bees, hoverflies, butterflies, and beetles. While honeybees frequently dominate public conservation campaigns, wild pollinators provide the vast majority of pollination services for wild flora and agricultural crops alike. In fact, approximately one-third of the human diet globally depends directly or indirectly on insect pollination, ranging from apples and almonds to coffee and tomatoes. However, wild pollinator populations have experienced precipitous declines over the past three decades due to a combination of intensive agricultural practices, habitat fragmentation, pesticide exposure, and climate disruption.</p>
+                    <p><strong>Part 2: Agricultural Pressures and Neonicotinoid Pesticides.</strong> The intensification of modern farming has transformed diverse rural landscapes into vast monoculture deserts where flowering hedgerows and wildflower meadows have been systematically removed to maximize arable acreage. Without continuous floral resources throughout the spring and summer seasons, wild bee colonies starve. Compounding this habitat loss is the widespread application of systemic chemical pesticides, most notably neonicotinoids. Unlike older contact sprays that remained on plant surfaces, neonicotinoids are water-soluble chemicals absorbed directly into the vascular tissue of the plant, permeating every part of the organism including pollen and nectar. When foraging insects ingest these treated plants, the neurotoxic compounds impair their central nervous system, disrupting navigation, memory, foraging efficiency, and reproductive success. Even sublethal doses can prevent worker bees from successfully returning to their hives.</p>
+                    <p><strong>Part 3: Restoration Strategies and Citizen Science Initiatives.</strong> Reversing these declines requires immediate, coordinated intervention at both the municipal and agricultural scales. Farmers are increasingly encouraged to adopt agroecological practices, such as planting wildflower margins along field borders, practicing crop rotation, and reducing pesticide loads through integrated pest management. In urban areas, municipal authorities are transforming sterile grass verges into pollinator-friendly wildflower corridors and planting native tree species that provide early spring nectar sources. Furthermore, citizen science initiatives—such as annual bumblebee monitoring surveys where volunteers record species sightings—provide researchers with invaluable distributional data across vast geographical areas. Protecting pollinators is not merely an aesthetic choice; it is an economic and biological imperative for global food security. Next week, we will analyze legislative policy frameworks across the European Union and North America regarding chemical pesticide bans. Thank you for your attention.</p>
+                </div>
+
+                <div class="space-y-4 text-sm">
+                    <p class="font-semibold text-slate-900">Questions 1–5: Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>1. Approximately <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-24"> of the human diet depends on pollination.</div>
+                        <div>2. Intensive farming has replaced diverse landscapes with <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28"> deserts.</div>
+                        <div>3. Neonicotinoids are water-soluble chemicals absorbed into plant <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28"> tissue.</div>
+                        <div>4. Urban authorities are turning grass verges into <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28"> corridors.</div>
+                        <div>5. Annual bumblebee monitoring surveys rely on <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28"> science.</div>
+                    </div>
+                    <p class="font-semibold text-slate-900 pt-3">Questions 6–10: Choose the correct letter, A, B, or C.</p>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="font-medium">6. Which group provides the majority of pollination services?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. Managed honeybees only</option><option>B. Wild pollinators</option><option>C. Domesticated bumblebees</option></select>
+                        </div>
+                        <div>
+                            <p class="font-medium">7. What is the primary cause of starvation in wild bee colonies?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. Removal of floral hedgerows and meadows</option><option>B. Excess summer rainfall</option><option>C. High hive temperatures</option></select>
+                        </div>
+                        <div>
+                            <p class="font-medium">8. How do neonicotinoid pesticides enter plant pollen and nectar?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. They are sprayed directly onto open flowers</option><option>B. They are absorbed into the plant's vascular tissue</option><option>C. They seep upwards from groundwater</option></select>
+                        </div>
+                        <div>
+                            <p class="font-medium">9. What effect do sublethal doses of neonicotinoids have on worker bees?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. They disrupt navigation and foraging efficiency</option><option>B. They cause immediate paralysis</option><option>C. They double honey production</option></select>
+                        </div>
+                        <div>
+                            <p class="font-medium">10. What is integrated pest management designed to do?</p>
+                            <select class="mt-1 border border-slate-300 rounded px-2 py-1 text-sm"><option value="">Select...</option><option>A. Eliminate all insects permanently</option><option>B. Reduce chemical pesticide loads</option><option>C. Maximize monoculture yields</option></select>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- READING SECTION -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean space-y-8">
+                <div class="border-b border-slate-100 pb-4">
+                    <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-emerald-50 text-emerald-700 rounded-md mb-2">Section 2: Academic Reading</span>
+                    <h2 class="text-xl font-bold text-slate-900">IELTS Reading Passages (1–3)</h2>
+                </div>
+
+                <!-- Passage 1 -->
+                <div class="space-y-4 border-b border-slate-200 pb-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <h3 class="text-lg font-bold text-slate-900">Passage 1: The Architecture of Architectural Brutalism</h3>
+                        <button type="button" id="t4-p1-btn" onclick="toggleTTS('t4-p1-text', 't4-p1-btn')" class="no-print inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm cursor-pointer">&#9658; Listen (TTS)</button>
+                    </div>
+                    <div id="t4-p1-text" class="text-sm text-slate-700 space-y-3 leading-relaxed bg-slate-50/70 p-4 rounded-lg border border-slate-100">
+                        <p>Few architectural movements evoke as much polarized passion as Brutalism. Flourishing from the 1950s through the 1970s, Brutalist architecture emerged in post-war Europe as nations rushed to rebuild bombed-out cities, universities, and public housing complexes under severe economic constraints. The term itself does not derive from the English word "brutal," but rather from the French phrase *béton brut*, meaning "raw concrete"—a term coined by modernist pioneer Le Corbusier to describe his uncompromising use of unfinished, board-marked concrete structures.</p>
+                        <p>Unlike the sleek glass and steel skyscrapers of the International Style, Brutalist buildings celebrated structural honesty and material authenticity. Columns, beams, stairwells, and ventilation shafts were left exposed and unadorned, proudly displaying the wooden grain impressions left by the casting molds. Architects such as Alison and Peter Smithson in Britain, Ernő Goldfinger, and Marcel Breuer viewed raw concrete as a democratic, monumental medium capable of expressing civic strength, communal solidarity, and socialist idealism during an era of profound social reconstruction.</p>
+                        <p>However, by the late twentieth century, public affection for Brutalism plummeted. In damp northern European climates, porous raw concrete weathered poorly, developing dark streaking, water stains, and moss growth. As maintenance budgets dwindled in the 1980s, many municipal complexes fell into severe disrepair. Their fortress-like facades, towering massing, and elevated concrete walkways became associated with urban decay, crime, and dystopian alienation, leading to the demolition of masterpieces like London’s Robin Hood Gardens.</p>
+                        <p>In recent years, however, Brutalism has undergone a remarkable aesthetic reappraisal. Younger generations, captivated by the sculptural drama, texture, and uncompromising honesty of concrete monoliths, have launched grassroots preservation campaigns. Coffee-table books, Instagram accounts, and architectural tours celebrate these buildings not as eyesores, but as heroic monuments of an ambitious utopian past.</p>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-semibold">Questions 1–4: Do the following statements agree with Passage 1? (TRUE / FALSE / NOT GIVEN)</p>
+                        <div>1. Brutalism originated in post-war Europe to rebuild damaged cities. <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select></div>
+                        <div>2. The term "Brutalism" originates from the English word for cruelty. <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select></div>
+                        <div>3. Le Corbusier preferred polished marble over raw concrete. <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select></div>
+                        <div>4. Modern younger generations have helped spark a Brutalist architectural revival. <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>TRUE</option><option>FALSE</option><option>NOT GIVEN</option></select></div>
+                    </div>
+                </div>
+
+                <!-- Passage 2 -->
+                <div class="space-y-4 border-b border-slate-200 pb-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <h3 class="text-lg font-bold text-slate-900">Passage 2: The Science of Bioluminescence in Marine Ecosystems</h3>
+                        <button type="button" id="t4-p2-btn" onclick="toggleTTS('t4-p2-text', 't4-p2-btn')" class="no-print inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm cursor-pointer">&#9658; Listen (TTS)</button>
+                    </div>
+                    <div id="t4-p2-text" class="text-sm text-slate-700 space-y-3 leading-relaxed bg-slate-50/70 p-4 rounded-lg border border-slate-100">
+                        <p>In the pitch-black realm of the deep ocean—the bathypelagic zone stretching from one thousand meters downward—sunlight is entirely absent. Yet this perpetual darkness is far from lifeless; in fact, over three-quarters of deep-sea animals produce their own living light through a biochemical process known as bioluminescence. Far from being a biological novelty, bioluminescence is a vital evolutionary adaptation essential for survival, predation, and reproduction in the largest habitat on Earth.</p>
+                        <p>At the chemical level, bioluminescence is produced by an enzyme-catalyzed chemiluminescence reaction. A light-emitting molecule called luciferin is oxidized by an enzyme named luciferase, releasing energy in the form of visible light with almost zero heat waste—unlike incandescent light bulbs, which waste ninety percent of energy as heat. Depending on the chemical structure of the luciferin and the marine organism involved, the emitted light ranges from deep blue—which travels farthest through seawater—to vibrant green and rare red wavelengths.</p>
+                        <p>Organisms deploy bioluminescence for diverse evolutionary functions. For predators like the anglerfish, a luminous lure dangling above its jaws attracts curious prey in the dark. For prey species, flashing lights can startle or blind attackers, or create a diversion known as "counter-illumination." Certain squid species emit glowing photophores along their ventral bellies, matching the faint downwelling sunlight from the surface to erase their silhouette from predators lurking below. In biomedical research, extracted luciferase genes have revolutionized molecular biology, serving as glowing reporter tags that allow scientists to track cancer cell growth and gene expression in real time.</p>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-semibold">Questions 5–8: Complete the summary using ONE WORD from the passage for each answer.</p>
+                        <p>Over three-quarters of deep-sea creatures produce light through <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28">. The chemical reaction involves luciferin oxidized by an enzyme called <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28">. Seawater allows <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28"> light to travel the furthest distance. In medicine, extracted genes act as glowing <input type="text" class="border-b border-slate-400 px-2 py-0.5 w-28"> tags for tracking cancer.</p>
+                    </div>
+                </div>
+
+                <!-- Passage 3 -->
+                <div class="space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <h3 class="text-lg font-bold text-slate-900">Passage 3: The Philosophy of Stoicism in the Modern Era</h3>
+                        <button type="button" id="t4-p3-btn" onclick="toggleTTS('t4-p3-text', 't4-p3-btn')" class="no-print inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm cursor-pointer">&#9658; Listen (TTS)</button>
+                    </div>
+                    <div id="t4-p3-text" class="text-sm text-slate-700 space-y-3 leading-relaxed bg-slate-50/70 p-4 rounded-lg border border-slate-100">
+                        <p>Founded in Athens by Zeno of Citium around 300 BC, Stoicism was designed not as an esoteric academic philosophy for ivory-tower intellectuals, but as a practical operating manual for navigating the turbulence of daily life. Over the past two decades, Stoicism has experienced a remarkable renaissance among corporate executives, elite athletes, software engineers, and psychologists seeking mental resilience in an unpredictable world. Yet popular misconceptions frequently conflate modern stoicism with emotional suppression—the idea of "bottling up" feelings and enduring hardship without complaint. Classical Stoicism, by contrast, advocated for emotional clarity, rational judgment, and active civic virtue.</p>
+                        <p>At the core of classical Stoicism lies the dichotomy of control, famously articulated by the former slave-turned-philosopher Epictetus. Stoics divide reality into two categories: things that are up to us—our thoughts, intentions, judgments, and moral character—and things that are not up to us—external events, economic conditions, the opinions of others, and physical outcomes. Anxiety and suffering, Epictetus argued, arise entirely when humans expend emotional energy trying to control the uncontrollable. True freedom is achieved by ruthlessly surrendering external outcomes while taking absolute responsibility for our internal response.</p>
+                        <p>Another cornerstone of Stoic practice is *premeditatio malorum*—the premeditation of evils. Rather than engaging in toxic positivity or wishful thinking, Stoics routinely visualize worst-case scenarios in advance—such as professional failure, financial loss, or illness. This mental rehearsal desensitizes the mind to panic, reduces future shock, and fosters profound gratitude for what one currently possesses. Far from breeding cynicism, Seneca and Marcus Aurelius emphasized cosmopolitanism and universal human brotherhood, arguing that our primary duty is to contribute to the common welfare of human society.</p>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <p class="font-semibold">Questions 9–12: Choose the correct letter, A, B, or C.</p>
+                        <div>9. What is a common modern misconception about classical Stoicism? <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>A. It requires emotional suppression</option><option>B. It was created exclusively for emperors</option><option>C. It rejects all physical science</option></select></div>
+                        <div>10. According to Epictetus, what is within human control? <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>A. Economic conditions and weather</option><option>B. Thoughts, intentions, and moral character</option><option>C. The opinions of other people</option></select></div>
+                        <div>11. What is the purpose of *premeditatio malorum*? <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>A. To visualize worst-case scenarios and reduce panic</option><option>B. To guarantee lifelong financial success</option><option>C. To eliminate the need for sleep</option></select></div>
+                        <div>12. What did Seneca and Marcus Aurelius emphasize regarding society? <select class="border border-slate-300 rounded px-2 py-0.5 ml-2"><option value="">Select...</option><option>A. Complete social isolation</option><option>B. Universal human brotherhood and civic duty</option><option>C. Strict political nationalism</option></select></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- WRITING SECTION (WITH BAR CHART SVG) -->
+            <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean space-y-8">
+                <div class="border-b border-slate-100 pb-4">
+                    <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-amber-50 text-amber-700 rounded-md mb-2">Section 3: Academic Writing</span>
+                    <h2 class="text-xl font-bold text-slate-900">IELTS Writing Tasks 1 &amp; 2</h2>
+                </div>
+                <div class="space-y-3 print-avoid-break">
+                    <h3 class="text-base font-bold text-slate-900">Writing Task 1 (Minimum 150 words — 20 minutes)</h3>
+                    <p class="text-sm text-slate-700">The chart below illustrates average daily water consumption per capita (in litres) across five metropolitan sectors in 2025. Summarise the information by selecting and reporting main features, and make comparisons where relevant.</p>
+                    
+                    <!-- SVG Bar Chart Visual -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 flex flex-col items-center">
+                        <p class="text-xs font-bold text-slate-600 uppercase mb-2">Average Daily Water Consumption per Capita (Litres)</p>
+                        <svg viewBox="0 0 550 240" class="w-full max-w-lg h-auto">
+                            <!-- Grid lines -->
+                            <line x1="80" y1="20" x2="520" y2="20" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="80" y1="60" x2="520" y2="60" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="80" y1="100" x2="520" y2="100" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="80" y1="140" x2="520" y2="140" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="80" y1="180" x2="520" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+                            <line x1="80" y1="200" x2="520" y2="200" stroke="#cbd5e1" stroke-width="2"/>
+                            
+                            <!-- Y-axis labels -->
+                            <text x="70" y="24" font-size="10" fill="#64748b" text-anchor="end">250L</text>
+                            <text x="70" y="64" font-size="10" fill="#64748b" text-anchor="end">200L</text>
+                            <text x="70" y="104" font-size="10" fill="#64748b" text-anchor="end">150L</text>
+                            <text x="70" y="144" font-size="10" fill="#64748b" text-anchor="end">100L</text>
+                            <text x="70" y="184" font-size="10" fill="#64748b" text-anchor="end">50L</text>
+                            <text x="70" y="204" font-size="10" fill="#64748b" text-anchor="end">0</text>
+
+                            <!-- Bars: Residential (190L -> y=48, h=152), Commercial (145L -> y=84, h=116), Industrial (220L -> y=24, h=176), Agricultural (110L -> y=112, h=88), Municipal (85L -> y=132, h=68) -->
+                            <rect x="110" y="48" width="45" height="152" fill="#2563eb" rx="4"/>
+                            <rect x="190" y="84" width="45" height="116" fill="#059669" rx="4"/>
+                            <rect x="270" y="24" width="45" height="176" fill="#d97706" rx="4"/>
+                            <rect x="350" y="112" width="45" height="88" fill="#7c3aed" rx="4"/>
+                            <rect x="430" y="132" width="45" height="68" fill="#db2777" rx="4"/>
+
+                            <!-- X-axis labels -->
+                            <text x="132.5" y="220" font-size="10" fill="#64748b" text-anchor="middle">Residential</text>
+                            <text x="212.5" y="220" font-size="10" fill="#64748b" text-anchor="middle">Commercial</text>
+                            <text x="292.5" y="220" font-size="10" fill="#64748b" text-anchor="middle">Industrial</text>
+                            <text x="372.5" y="220" font-size="10" fill="#64748b" text-anchor="middle">Agricultural</text>
+                            <text x="452.5" y="220" font-size="10" fill="#64748b" text-anchor="middle">Municipal</text>
+                        </svg>
+                    </div>
+
+                    <textarea id="t4-w1" rows="7" oninput="updateWordCount('t4-w1', 't4-w1-count')" placeholder="Write your Task 1 response here..." class="w-full p-3 text-sm bg-slate-50 border border-slate-300 rounded-lg"></textarea>
+                    <div class="text-right text-xs font-medium text-slate-500 no-print" id="t4-w1-count">0 words</div>
+                </div>
+                <div class="space-y-3 print-avoid-break border-t border-slate-200 pt-6">
+                    <h3 class="text-base font-bold text-slate-900">Writing Task 2 (Minimum 250 words — 40 minutes)</h3>
+                    <p class="text-sm text-slate-700">With the rapid development of artificial intelligence and automation, many traditional jobs are being replaced by machines. What are the benefits and drawbacks of this shift, and how can society adapt?</p>
+                    <textarea id="t4-w2" rows="10" oninput="updateWordCount('t4-w2', 't4-w2-count')" placeholder="Write your Task 2 essay here..." class="w-full p-3 text-sm bg-slate-50 border border-slate-300 rounded-lg"></textarea>
+                    <div class="text-right text-xs font-medium text-slate-500 no-print" id="t4-w2-count">0 words</div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- FOOTER & SCRIPTS                                                    -->
+    <!-- =================================================================== -->
+    <footer class="bg-white border-t border-slate-200 mt-12 py-6 print-clean">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+            &copy; 2026 James Wynne English. All rights reserved. For educational and IELTS preparation use only.
+        </div>
+    </footer>
+
+    <script>
+        let currentUtterance = null;
+        let activeBtnId = null;
+
+        function toggleTTS(elementId, btnId) {
+            if (!('speechSynthesis' in window)) { alert('Your browser does not support Text-to-Speech.'); return; }
+            const btn = document.getElementById(btnId);
+            if (window.speechSynthesis.speaking && activeBtnId === btnId) {
+                window.speechSynthesis.cancel();
+                resetBtn(btn);
+                activeBtnId = null;
+                return;
+            }
+            window.speechSynthesis.cancel();
+            if (activeBtnId) {
+                const prevBtn = document.getElementById(activeBtnId);
+                if (prevBtn) resetBtn(prevBtn);
+            }
+            const textEl = document.getElementById(elementId);
+            const text = textEl ? textEl.innerText : '';
+            if (!text) return;
+
+            currentUtterance = new SpeechSynthesisUtterance(text);
+            currentUtterance.lang = 'en-GB';
+            currentUtterance.rate = 0.95;
+            currentUtterance.onend = () => { resetBtn(btn); activeBtnId = null; };
+            currentUtterance.onerror = () => { resetBtn(btn); activeBtnId = null; };
+
+            activeBtnId = btnId;
+            btn.innerHTML = '&#9632; Stop Audio';
+            btn.classList.replace('bg-blue-600', 'bg-red-600');
+            btn.classList.replace('hover:bg-blue-700', 'hover:bg-red-700');
+            window.speechSynthesis.speak(currentUtterance);
+        }
+
+        function resetBtn(btn) {
+            btn.innerHTML = '&#9658; Listen (TTS)';
+            btn.classList.replace('bg-red-600', 'bg-blue-600');
+            btn.classList.replace('hover:bg-red-700', 'hover:bg-blue-700');
+        }
+
+        function toggleTranscript(id, btnId) {
+            const el = document.getElementById(id);
+            const btn = document.getElementById(btnId);
+            el.classList.toggle('hidden');
+            btn.textContent = el.classList.contains('hidden') ? 'Show Transcript' : 'Hide Transcript';
+        }
+
+        function updateWordCount(textareaId, counterId) {
+            const text = document.getElementById(textareaId).value.trim();
+            const words = text ? text.split(/\s+/).length : 0;
+            document.getElementById(counterId).textContent = words + ' words';
+        }
+    </script>
+</body>
+</html>
